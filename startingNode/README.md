@@ -1,7 +1,7 @@
 
 # 📝 Iniciando com o Node.JS
 
-Note é o meu cadernido de anotaçôes pessoal onde escrevo tuturiais ou scripts.
+Configurando arquivos e dependência ultilizando express, nodemon e nunjucks.
 
 <br>
 
