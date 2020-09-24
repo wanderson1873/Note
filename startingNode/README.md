@@ -57,7 +57,9 @@ nunjucks.configure("views", {
 })
 
 // root main
-server.get("/", function() {})
+server.get("/", function(req, res) {
+    return res.send("Hello, word!")
+})
 
 server.listen(5000, function() {
     console.log("server is running!")
@@ -65,6 +67,15 @@ server.listen(5000, function() {
 ```
 
 ---
+## Finalizando
+Agora vamos alterar o arquivo package.json que está na raiz do sistama. vamos alterar a linha   `"start": "node server.js"`   para   `"start": "nodemon server.js"`. Isso fará que o servidor rode através do [nodemon](https://nodemon.io/).
 
+
+Agora é só rodar o servidor usando `npm start`.
+```npm
+npm start
+```
+
+---
 
 Feito com :purple_heart: by [Wanderson Oliveira](https://github.com/wanderson1873)
