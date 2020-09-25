@@ -32,7 +32,7 @@ git status
  - Traquear todos arquivos
  
  ```bash
-git -A
+git add -A
 ```
 
 ---
@@ -51,5 +51,19 @@ git commit -am "[comentario_aqui]"
 git log
 ```
 ---
+
+- Visualizar branch
+
+```bash
+git branch
+```
+---
+
+## Revertendo Modificações
+
+
+
+---
+
 
 Feito com :purple_heart: by [Wanderson Oliveira](https://github.com/wanderson1873)
