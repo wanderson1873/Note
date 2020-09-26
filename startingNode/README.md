@@ -68,11 +68,12 @@ server.listen(5000, function() {
 
 ---
 ## Finalizando
-Agora vamos alterar o arquivo package.json que está na raiz do sistama. vamos alterar a linha   `"start": "node server.js"`   para   `"start": "nodemon server.js"`. Isso fará que o servidor rode através do [nodemon](https://nodemon.io/).
+Agora vamos alterar o arquivo `package.json` que está na raiz do sistama. vamos alterar a linha   `"start": "node server.js"`   para   `"start": "nodemon server.js"`. Isso fará que o servidor rode através do [nodemon](https://nodemon.io/).
 
 
 Agora é só rodar o servidor usando `npm start`.
 ```npm
+//Iniciando servidor
 npm start
 ```
 
