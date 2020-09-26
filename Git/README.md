@@ -8,55 +8,58 @@ Principais comandos no git para usar no dia-a-dia. Usando Git e GitHub.
 
 ## Primeiros comandos básicos
 
-- Para criar um novo repositório
+Para criar um novo repositório
 
 ```bash
-git init [nome_da_pasta]
+$ git init [nome_da_pasta]
 ```
 ou use  `git init`  se ja existir a pasta
 
 ```bash
-git init
+$ git init
 ```
  
  ---
 
- - Varificar se houve alguma alteração
-
+ Varificar se houve alguma alteração
  ```bash
-git status
+$ git status
 ```
 
 ---
 
- - Traquear todos arquivos
- 
+ Traquear todos arquivos
  ```bash
-git add -A
+$ git add -A
 ```
 
 ---
 
- - Fazer commits
-
+ Fazer commits
 ```bash
-git commit -am "[comentario_aqui]"
+$ git commit -am "[comentario_aqui]"
 ```
 
 ---
 
-- Visualizar lista de todos os commits
-
+Visualizar lista de todos os commits
 ```bash
-git log
+$ git log
 ```
 ---
 
-- Visualizar branch
-
+Visualizar branch
 ```bash
-git branch
+$ git branch
 ```
+
+---
+
+Visualizar modificações no arquivo
+```bash
+$ git diff
+```
+
 ---
 
 ## Revertendo Modificações
@@ -68,7 +71,7 @@ git branch
 
 exemplo
 ```bash
-git reset --soft [<commit>]
+$ git reset --soft [<commit>]
 ```
 
  _`--mixed`_
@@ -77,7 +80,7 @@ git reset --soft [<commit>]
 
 exemplo
 ```bash
-git reset --mixed [<commit>]
+$ git reset --mixed [<commit>]
 ```
 
  _`--hard`_
@@ -86,12 +89,68 @@ git reset --mixed [<commit>]
 
 exemplo
 ```bash
-git reset --hard [<commit>]
+$ git reset --hard [<commit>]
 ```
 
+---
+## Branches
+Visualizar, adicionar, trocar, deletar.
+
+<br>
+
+Visualizar todas as branch
+```bash
+$ git branch
+```
+
+Criar nova branch
+```bash
+$ git branch [nome_branch]
+```
+
+Mudar de branch
+```bash
+$ git checkout [nome_branch]
+```
+
+---
+
+## Git e GitHub
+Conectando git com github. [+Detalhes](https://docs.github.com/pt/free-pro-team@latest/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
+
+1. Abrir Git Bash.
+
+2. Cole o texto abaixo, substituindo o endereço de e-mail pelo seu GitHub.
+```bash
+$ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+```
+
+ O comando criará uma nova chave SSH, usando o e-mail fornecido como uma etiqueta. (só apertar enter)
+```bash
+> Generating public/private rsa key pair.
+```
+
+3. Quando aparecer a solicitação "Enter a file in which to save the key" , presssione Enter. O local padrão do arquivo será aceito.
 
 ```bash
-git reset [<modo>] [<commit>]
+> Enter a file in which to save the key (/c/Users/you/.ssh/id_rsa):[Press enter]com"
+```
+
+4.
+```bash
+> Enter passphrase (empty for no passphrase): [Digite uma senha ou não]
+```
+```bash
+> Enter same passphrase again: [Novamente]
+```
+
+5. Copie a chave prublica gerada dentro do arquivo `.ssh`.
+
+6. Cole a chave dentro de `SSH and GPS keys` do GitHub. 
+
+7. Conecte o repositório local com o remoto.
+```bash
+$ git remote add origen [url_remota]
 ```
 
 ---
