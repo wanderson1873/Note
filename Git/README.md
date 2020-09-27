@@ -29,7 +29,7 @@ Principais comandos no git para usar no dia-a-dia. Usando Git e GitHub.
 
 <br>
 
-Puxandos alterações feitas remotamente
+Puxando alterações feitas remotamente
 ```bash
 $ git pull origin [branch]
 ```
@@ -67,7 +67,7 @@ $ git commit -am "[comentario_aqui]"
 
  Fazer commits remoto (importante)
 ```bash
-$ git push -u origen master
+$ git push origin master
 ```
 ---
 
@@ -84,7 +84,6 @@ $ git diff
 ```
 
 ---
-
 
 ## Branches
 Visualizar, adicionar, trocar, deletar.
