@@ -6,10 +6,35 @@ Principais comandos no git para usar no dia-a-dia. Usando Git e GitHub.
 
 ---
 
-## Primeiros comandos básicos
+# Tópicos
 
-Para criar um novo repositório
+[Principais comandos](#principais-comandos)
 
+[Branches](#branches)
+
+[Revertendo Modificações](#revertendo-modificacoes)
+
+[Git e GitHub](#git-e-github)
+
+[Git revert](#git-revert)
+
+[Pull](#pull)
+
+[Clone](#clone)
+
+
+---
+
+## Principais comandos
+
+<br>
+
+Puxandos alterações feitas remotamente
+```bash
+$ git pull origin [branch]
+```
+
+Criar um novo repositório
 ```bash
 $ git init [nome_da_pasta]
 ```
@@ -21,7 +46,7 @@ $ git init
  
  ---
 
- Varificar se houve alguma alteração
+ Verifica o status de alterações
  ```bash
 $ git status
 ```
@@ -50,18 +75,45 @@ Visualizar lista de todos os commits
 ```bash
 $ git log
 ```
----
-
-Visualizar branch
-```bash
-$ git branch
-```
 
 ---
 
 Visualizar modificações no arquivo
 ```bash
 $ git diff
+```
+
+---
+
+
+## Branches
+Visualizar, adicionar, trocar, deletar.
+
+<br>
+
+Visualizar todas as branch
+```bash
+$ git branch
+```
+
+Criar nova branch
+```bash
+$ git branch [nome_branch]
+```
+
+Mudar de branch
+```bash
+$ git checkout [nome_branch]
+```
+
+Deletar branch local
+```bash
+$ git branch -D [name_branch]
+```
+
+Deletar branch remoto
+```bash
+$ git push origin :[name_branch]
 ```
 
 ---
@@ -94,27 +146,6 @@ $ git reset --mixed [<commit>]
 exemplo
 ```bash
 $ git reset --hard [<commit>]
-```
-
----
-## Branches
-Visualizar, adicionar, trocar, deletar.
-
-<br>
-
-Visualizar todas as branch
-```bash
-$ git branch
-```
-
-Criar nova branch
-```bash
-$ git branch [nome_branch]
-```
-
-Mudar de branch
-```bash
-$ git checkout [nome_branch]
 ```
 
 ---
@@ -155,6 +186,33 @@ $ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
 7. Conecte o repositório local com o remoto.
 ```bash
 $ git remote add origin [url_remota]
+```
+
+---
+
+## Git revert
+Voltar para um commit sem perder os atuais. Salvador das sexta-feiras
+
+```bash
+$ git revert --no-edit [number_commit]
+```
+
+---
+
+## Pull
+Puxandos alterações feitas remotamente.
+
+```bash
+$ git pull origin [branch]
+```
+
+---
+
+## Clone
+Clonando repositorios remotos.
+
+```bash
+$ git clone [url_projeto]
 ```
 
 ---
