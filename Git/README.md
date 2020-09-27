@@ -40,6 +40,10 @@ $ git add -A
 $ git commit -am "[comentario_aqui]"
 ```
 
+ Fazer commits remoto (importante)
+```bash
+$ git push -u origen master
+```
 ---
 
 Visualizar lista de todos os commits
@@ -150,7 +154,7 @@ $ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
 
 7. Conecte o repositório local com o remoto.
 ```bash
-$ git remote add origen [url_remota]
+$ git remote add origin [url_remota]
 ```
 
 ---
