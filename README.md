@@ -7,14 +7,22 @@ Note é o meu cadernido de anotaçôes pessoal onde escrevo tuturiais ou scripts
 
 ---
 
+## 🚀 Diretórios
+*  [Git](Git/)
+
+*  [Navegação (menu)](navegation/)
+
+*  [Iniciando com Node.JS](startNode/)
+
+
 ## 🎗 Participar 
 Para ajudar a melhorar o meu trabalho ou me dar dicas de apredizado, acesse as minhas redes.
 
-📌 [LinkedIn](https://www.linkedin.com/in/wanderson1873/)
+* [LinkedIn](https://www.linkedin.com/in/wanderson1873/)
 
-📌 [Instagran](https://www.instagram.com/wanderson1873/)
+* [Instagran](https://www.instagram.com/wanderson1873/)
 
-📌 [Web site](https://www.wanderson-oliveira.com)
+* [Web site](https://www.wanderson-oliveira.com)
 
 <br>
 
