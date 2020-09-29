@@ -29,7 +29,7 @@ Principais comandos no git para usar no dia-a-dia. Usando Git e GitHub.
 
 <br>
 
-Puxando alterações feitas remotamente
+Puxando alterações remotas
 ```bash
 $ git pull origin [branch]
 ```
