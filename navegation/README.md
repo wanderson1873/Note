@@ -1,6 +1,6 @@
 
 # 📝 Navegação no menu
-
+Uma método simples de para navegar entre um menu e outro.
 
 <br>
 
